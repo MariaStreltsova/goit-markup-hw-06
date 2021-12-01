@@ -718,8 +718,10 @@ svg {
   display: flex;
   align-items: center;
   justify-content: center;
+  transition: color var(--transition-duration-timing-function);
 }
-.modal-close:hover {
+.modal-close:hover,
+.modal-close:focus {
   color: var(--accent-text-color);
 }
 .is-hidden {
@@ -753,7 +755,14 @@ svg {
   height: 40px;
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
+  transition: outline-color var(--transition-duration-timing-function);
 }
+.modal-input:focus {
+  outline-color: var(--accent-text-color);
+}
+/* .modal-input:focus {
+  border-color: var(--accent-text-color);
+} */
 .modal-button {
   display: block;
   margin: 0 auto;
@@ -765,6 +774,8 @@ svg {
   font-weight: 700;
   font-size: 16px;
   line-height: 1.8;
+  transition: background-color var(--transition-duration-timing-function),
+    box-shadow var(--transition-duration-timing-function);
 }
 .modal-button:hover {
   background-color: #188ce8;
@@ -778,4 +789,8 @@ svg {
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
   margin-bottom: 20px;
+  transition: outline-color var(--transition-duration-timing-function);
+}
+.modal-text:focus {
+  outline-color: var(--accent-text-color);
 }

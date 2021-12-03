@@ -476,7 +476,7 @@ svg {
 .footer .address {
   font-weight: 400;
   font-size: 14px;
-  line-height: 1.71;
+  line-height: 1.46;
   letter-spacing: 0.03em;
   color: var(--white-color);
 }
@@ -522,8 +522,10 @@ svg {
 .address-block {
   margin-right: 70px;
 }
+
 .join-list {
   display: flex;
+  margin-right: 93px;
 }
 .join-title {
   font-style: 700;
@@ -558,9 +560,6 @@ svg {
 .join-item + .join-item {
   margin-left: 10px;
 }
-.subscribe-block {
-  margin-left: 93px;
-}
 .subscribe-title {
   font-style: 700;
   font-size: 14px;
@@ -572,12 +571,13 @@ svg {
   text-transform: uppercase;
 }
 .subscribe-input {
-  width: 358px;
+  width: 350px;
   height: 50px;
   background-color: transparent;
   border: 1px solid rgba(255, 255, 255, 0.3);
   border-radius: 4px;
   padding-left: 16px;
+  color: var(--white-color);
 }
 .subscribe-input::placeholder {
   color: rgba(255, 255, 255, 0.6);
@@ -786,10 +786,7 @@ svg {
   letter-spacing: 0.03em;
   margin-bottom: 12px;
 }
-/* .modal-form-field {
-  display: flex;
-  flex-direction: column;
-} */
+
 .modal-label {
   font-weight: 400;
   font-size: 12px;
@@ -808,9 +805,6 @@ svg {
 .modal-input:focus {
   outline-color: var(--accent-text-color);
 }
-/* .modal-input:focus {
-  border-color: var(--accent-text-color);
-} */
 .modal-button {
   display: block;
   margin: 0 auto;
@@ -841,4 +835,13 @@ svg {
 }
 .modal-text:focus {
   outline-color: var(--accent-text-color);
+}
+.modal-input-field {
+  position: relative;
+}
+.input-icon {
+  fill: var(--secondary-text-color);
+  position: absolute;
+  top: 0;
+  left: 0;
 }

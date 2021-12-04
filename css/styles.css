@@ -808,6 +808,9 @@ svg {
   border-radius: 4px;
   transition: outline-color var(--transition-duration-timing-function);
 }
+.modal-form-field {
+  margin-bottom: 10px;
+}
 .modal-input:focus {
   outline-color: var(--accent-text-color);
   padding-left: 42px;
@@ -887,7 +890,7 @@ svg {
   text-decoration-skip-ink: none;
   margin-left: 3px;
 }
-.modal-form-field {
+.modal-text-form-field {
   margin-bottom: 30px;
 }
 .modal-check-text span {
